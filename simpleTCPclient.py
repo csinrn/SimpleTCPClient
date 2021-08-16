@@ -16,9 +16,9 @@ if __name__ == '__main__':
     if len(sys.argv) < 2:
         print('please enter ip, port, and message to send. For example:  python3 simpleTCPclient.py 192.168.1.10 3000 ACK\r\n')
         sys.exit()
-    print('ip: ', sys.argv[2])
-    print('port: ', sys.argv[3])
-    print('msg: ', sys.argv[4])
+    print('ip: ', sys.argv[1])
+    print('port: ', sys.argv[2])
+    print('msg: ', sys.argv[3])
 
 r = TCPsend(sys.argv[2], sys.argv[3], sys.argv[4])
 print(r)
