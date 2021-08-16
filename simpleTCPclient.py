@@ -20,5 +20,5 @@ if __name__ == '__main__':
     print('port: ', sys.argv[2])
     print('msg: ', sys.argv[3])
 
-r = TCPsend(sys.argv[1], sys.argv[2], sys.argv[3])
+r = TCPsend(sys.argv[1], int(sys.argv[2]), sys.argv[3])
 print(r)
